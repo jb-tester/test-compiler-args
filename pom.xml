@@ -17,20 +17,27 @@
                     <fork>true</fork>
                     <source>1.6</source>
                     <target>1.6</target>
+                    <!--
                     <testCompilerArgument>-parameters</testCompilerArgument>
-                    <!--<compilerArgument>-parameters</compilerArgument>-->
+                    -->
+                    <!--
+                    <compilerArgument>-parameters</compilerArgument>
+                    -->
+                    <!--
                     <compilerArgs>
                         <arg>-parameters</arg>
-                        <arg></arg>
                     </compilerArgs>
+                    -->
                     <compilerArguments>
                         <Averbose>true</Averbose>
+                        <parameters></parameters>
+                        <Xmaxerrs>0</Xmaxerrs>
                     </compilerArguments>
+                    <!--
                     <testCompilerArguments>
-
-                        <Xmaxerrs>sss1</Xmaxerrs>
-                       <!-- <Duser.language>fr</Duser.language>-->
+                        <Xmaxerrs>0</Xmaxerrs>
                     </testCompilerArguments>
+                    -->
 
                 </configuration>
             </plugin>
