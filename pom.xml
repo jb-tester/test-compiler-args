@@ -12,7 +12,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.8.0</version>
                 <configuration>
                     <fork>true</fork>
                     <source>1.6</source>
@@ -20,7 +20,7 @@
                     <testCompilerArgument>-parameters</testCompilerArgument>
                     <!--<compilerArgument>-parameters</compilerArgument>-->
                     <compilerArgs>
-                       <!-- <arg>-parameters</arg>-->
+                        <arg>-parameters</arg>
                         <arg></arg>
                     </compilerArgs>
                     <compilerArguments>
