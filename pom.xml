@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mytests.mvn</groupId>
+    <artifactId>test-compiler-args</artifactId>
+    <version>1.0.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <fork>true</fork>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <testCompilerArgument>-parameters</testCompilerArgument>
+                    <!--<compilerArgument>-parameters</compilerArgument>-->
+                    <compilerArgs>
+                       <!-- <arg>-parameters</arg>-->
+                        <arg></arg>
+                    </compilerArgs>
+                    <compilerArguments>
+                        <Averbose>true</Averbose>
+                    </compilerArguments>
+                    <testCompilerArguments>
+
+                        <Xmaxerrs>sss1</Xmaxerrs>
+                       <!-- <Duser.language>fr</Duser.language>-->
+                    </testCompilerArguments>
+
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>
